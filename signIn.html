@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./signin.css">
+    <title>BBVA: Inicio de sesión</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <a href="./index.html">
+                <img id="logo" src="https://www.bbva.mx/content/dam/public-web/global/images/logos/logo_bbva_blanco.svg"
+                    alt="logo">
+            </a>
+            <div></div>
+            <div>
+                <div></div>
+                <a id="nuevoCliente" href="./error.html" class="button">Hazte cliente</a>
+                <div></div>
+            </div>
+        </header>
+
+        <section>
+            <article id="caja">
+                <img id="logoError"
+                    src="https://www.bbva.mx/content/dam/public-web/global/images/logos/logo_bbva_blanco.svg"
+                    alt="logo">
+                <form id="formulario">
+                    <input id="usuario" type="text" placeholder="Ingresa tu usuario">
+                    <span class="escondido" id="errorUsuario">Usuario incorrecto</span>
+                    <input id="password" type="text" placeholder="Ingresa tu password">
+                    <span class="escondido" id="errorPassword">Contraseña incorrecta</span>
+                    <button type="submit">Ingresar</button>
+                    <span class="escondido" id="errorDatos">Ingresa tus datos</span>
+                </form>
+            </article>
+        </section>
+
+        <footer>
+            <div class="info">
+                <p>Proyecto realizado por: José Mario Rivera Carranza</p>
+                <a class="button" href="https://www.ingjosemario.com" target="_blank" class="button">Visita mi web!</a>
+            </div>
+        </footer>
+    </main>
+
+    <script src="/singin.js"></script>
+
+</body>
+
+</html>

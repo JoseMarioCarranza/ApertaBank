@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bancaPersonal.css">
+    <title>BBVA: Banca Personal</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <a href="./index.html">
+                <img id="logo" src="https://www.bbva.mx/content/dam/public-web/global/images/logos/logo_bbva_blanco.svg"
+                    alt="logo">
+            </a>
+        </header>
+
+        <section>
+            <div id="contenedorCentral">
+                <select onchange="mostrarValor()" id="cuenta">
+                    <option value="Personal">Personal</option>
+                    <option value="Ahorro">Ahorro</option>
+                    <option value="Inversión">Inversión</option>
+                </select>
+                <label>Dinero en cuenta:</label>
+                <input type="number" id="dineroCuenta">
+                <br>
+                <label>Cantidad de dinero:</label>
+                <input type="number" id="a">
+
+                <p id="errorDinero" class="errorOculto">No hay dinero suficiente</p>
+
+                <div id="accionesCajero">
+                    <button onclick="Ingresar()">Depositar</button>
+                    <button onclick="Retirar()">Retirar</button>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="info">
+                <p>Proyecto realizado por: José Mario Rivera Carranza</p>
+                <a class="button" href="https://www.ingjosemario.com" target="_blank" class="button">Visita mi web!</a>
+            </div>
+        </footer>
+    </main>
+
+    <script src="./bancaPersonal.js"></script>
+</body>
+
+</html>
